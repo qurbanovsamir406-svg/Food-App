@@ -3,7 +3,7 @@ import styles from "./Navbar.module.css";
 import Search from "./Searchbar";
 import Logo from "../assets/Logo.png";
 import { searchMealByName } from "../Api/mealAPI";
-import { useState, useEffect } from "react";
+import { useState,useEffect } from "react";
 
 export default function Navbar({ setFoodData }) {
 
