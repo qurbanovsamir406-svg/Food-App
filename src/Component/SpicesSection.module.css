@@ -1,0 +1,151 @@
+/* ===== Desktop (default) ===== */
+.container {
+    padding: 40px 110px;
+    background: #fef2de;
+    margin-top: 100px;
+}
+
+.title {
+    font-weight: 700;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 50px;
+    color: #000000;
+}
+
+.content {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.spicesimg {
+    flex: 1 1 300px;
+    max-width: 600px;
+}
+
+.spicesimg img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.text {
+    flex: 1 1 300px;
+    max-width: 600px;
+}
+
+.text h2 {
+    color: #ff9b05;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.text p {
+    color: #000000;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.readmorebtn {
+    display: block;
+    margin: 50px auto 20px auto;
+    background-color: #ff9b05;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* ===== RESPONSIVE: max-width 1024px ===== */
+@media (max-width: 1024px) {
+    .container {
+        padding: 30px 60px;
+    }
+    .title {
+        font-size: 42px;
+        margin-bottom: 40px;
+    }
+    .content {
+        gap: 30px;
+    }
+
+    .text {
+        margin-top: -50px;
+    }
+    .text h2 {
+        font-size: 26px;
+    }
+    .text p {
+        font-size: 18px;
+    }
+    .readmorebtn {
+        font-size: 18px;
+        padding: 9px 18px;
+    }
+}
+
+/* ===== RESPONSIVE: max-width 768px ===== */
+@media (max-width: 768px) {
+    .container {
+        padding: 25px 30px;
+    }
+    .title {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+    .content {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .text h2 {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .text p {
+        font-size: 16px;
+        text-align: center;
+    }
+    .readmorebtn {
+        font-size: 16px;
+        padding: 8px 16px;
+        margin-top: -70px;
+    }
+}
+
+/* ===== RESPONSIVE: max-width 480px ===== */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 15px;
+    }
+    .title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .text h2 {
+        font-size: 20px;
+    }
+    .text p {
+        font-size: 14px;
+    }
+    .readmorebtn {
+        font-size: 15px;
+        padding: 6px 14px;
+        margin-top: 20px;
+    }
+    .spicesimg {
+        width: 100%;
+        max-width: 100%;
+    }
+    .spicesimg img {
+        height: auto;
+    }
+}
+

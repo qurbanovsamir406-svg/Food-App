@@ -1,0 +1,174 @@
+.container {
+  width: 100%;
+  padding: 40px 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ff9b05;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  font-size: 32px;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+}
+
+.links{
+  border-right: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  padding: 0 110px;
+}
+.links p {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.links ul {
+  gap: 10px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.links ul li a {
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.links ul li a:hover {
+  text-decoration: underline;
+}
+ .social {
+  margin-bottom: 80px;
+}
+.social p {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.social ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
+.social ul li a {
+  text-decoration: none;
+  list-style: none;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #e38e0f;
+  color: #ffffff;
+  width: 100%;
+}
+
+/* ------------ up to 1024px ------------ */
+@media (max-width: 1024px) {
+  .container {
+    padding: 30px 60px;
+    gap: 40px;
+  }
+
+  .logoWrapper {
+    font-size: 28px;
+    gap: 14px;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .links {
+    padding: 0 60px;
+  }
+
+  .links p,
+  .social p {
+    font-size: 22px;
+  }
+
+  .links ul li a,
+  .social ul li a {
+    font-size: 18px;
+  }
+}
+
+/* ------------ up to 768px ------------ */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 30px;
+  }
+
+  .logoWrapper {
+    justify-content: center;
+    font-size: 26px;
+  }
+
+  .links {
+    padding: 0;
+    border-left: none;
+    border-right: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .links ul {
+    align-items: center;
+  }
+
+  .social {
+    margin-bottom: 40px;
+  }
+}
+
+/* ------------ up to 480px (mobile) ------------ */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .logoWrapper {
+    font-size: 22px;
+    gap: 10px;
+  }
+
+  .links p,
+  .social p {
+    font-size: 20px;
+  }
+
+  .links ul li a,
+  .social ul li a {
+    font-size: 16px;
+  }
+
+  .social ul {
+    gap: 10px;
+  }
+}
+

@@ -1,0 +1,179 @@
+.datacontainer {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.datacontainer h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ff9b05;
+  font-weight: 700;
+}
+
+.dataimg {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.datacontainer p {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+  text-align: left;
+}
+
+.datacontainer strong {
+  color: #ff9b05;
+}
+
+.instructions {
+  background: #fafafa;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  max-height: 250px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+}
+
+.watchBtn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 20px;
+  background: #ff9b05;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.watchBtn:hover {
+  background: #e08804;
+}
+
+/* --- Base (mobile-first already provided by you) --- */
+/* I assume your original styles are already present; these media queries override them where needed */
+
+/* Large tablets / small desktops — up to 1024px */
+@media (max-width: 1024px) {
+  .datacontainer {
+    margin: 30px 20px;
+    padding: 28px;
+    max-width: 720px; /* daha dar konteyner */
+    border-radius: 14px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+  }
+
+  .datacontainer h1 {
+    font-size: 32px;
+    margin-bottom: 18px;
+  }
+
+  .dataimg {
+    max-width: 460px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .datacontainer p {
+    font-size: 17px;
+  }
+
+  .watchBtn {
+    padding: 11px 18px;
+    font-size: 17px;
+  }
+}
+
+/* Medium devices — tablets / portrait — up to 768px */
+@media (max-width: 768px) {
+  .datacontainer {
+    margin: 24px 16px;
+    padding: 22px;
+    max-width: 640px;
+    text-align: left; /* daha yaxşı oxunma üçün soldan hizala */
+  }
+
+  .datacontainer h1 {
+    font-size: 28px;
+    color: #ff8a00; /* biraz yumşaq ton */
+    line-height: 1.1;
+  }
+
+  .dataimg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  .datacontainer p {
+    font-size: 16px;
+  }
+
+  .instructions {
+    max-height: 200px;
+    padding: 12px;
+  }
+
+  .watchBtn {
+    display: inline-block;
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 9px;
+  }
+}
+
+/* Small devices — phones — up to 480px */
+@media (max-width: 480px) {
+  .datacontainer {
+    margin: 18px 12px;
+    padding: 18px;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.10);
+  }
+
+  .datacontainer h1 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    text-align: left;
+  }
+
+  .dataimg {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+  }
+
+  .datacontainer p {
+    font-size: 15px;
+    margin: 8px 0;
+  }
+
+  .instructions {
+    max-height: 160px;
+    font-size: 14px;
+  }
+
+  .watchBtn {
+    display: block; /* tam enində düymə */
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+}

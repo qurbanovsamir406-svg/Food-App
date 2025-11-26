@@ -1,0 +1,13 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Bütün səhifə üçün ümumi stillər */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}

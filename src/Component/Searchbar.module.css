@@ -1,0 +1,169 @@
+/* ===== Desktop (default) ===== */
+.searchContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 5px auto;
+}
+
+.inputWrapper {
+  display: flex;
+  width: 380px;
+}
+
+.searchInput {
+  padding: 8px 16px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px 0 0 6px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.searchButton {
+  padding: 8px 16px;
+  background-color: #ffffff;
+  color: #ff9b05;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.searchButton:hover {
+  background-color: #ff9b05;
+  color: #ffffff;
+}
+
+.historyContainer {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 5px;
+}
+
+.historyContainer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.historyContainer li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.historyItem {
+  background: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 16px;
+  text-align: left;
+  flex: 1;
+}
+
+.deleteItem {
+  background: none;
+  border: none;
+  font-size: 22px;
+  font-weight: 300;
+  color: #ff0000;
+  cursor: pointer;
+  padding: 0 20px;
+  line-height: 1;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+
+/* ===== RESPONSIVE: max-width 1024px ===== */
+@media (max-width: 1024px) {
+  .inputWrapper {
+    width: 320px;
+  }
+  .searchInput {
+    font-size: 15px;
+    padding: 7px 14px;
+  }
+  .searchButton {
+    font-size: 15px;
+    padding: 7px 14px;
+  }
+  .historyItem {
+    font-size: 15px;
+  }
+  .deleteItem {
+    font-size: 20px;
+    margin-left: 15px;
+  }
+}
+
+/* ===== RESPONSIVE: max-width 768px ===== */
+@media (max-width: 768px) {
+  .inputWrapper {
+    width: 250px;
+  }
+  .searchInput {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+  .searchButton {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+  .historyItem {
+    font-size: 14px;
+  }
+  .deleteItem {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+}
+
+/* ===== RESPONSIVE: max-width 480px ===== */
+@media (max-width: 480px) {
+  .inputWrapper {
+    width: 90%; /* tam ekran genişliyi üçün */
+  }
+  .searchInput {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+  .searchButton {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+  .historyContainer {
+    max-height: 150px;
+  }
+  .historyItem {
+    font-size: 13px;
+    padding: 4px 12px;
+  }
+  .deleteItem {
+    font-size: 16px;
+    margin-left: 8px;
+    padding: 0 10px;
+  }
+}

@@ -1,0 +1,116 @@
+/* ===== Desktop Default ===== */
+.container {
+  border-bottom: 1px solid #eeeeee;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1380px;
+}
+
+.foodlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 50px 0;
+}
+
+.foodcard {
+  margin-top: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 320px;
+  padding: 10px;
+  transition: transform 0.2s ease;
+}
+
+.foodcard:hover {
+  transform: scale(1.05);
+}
+
+.foodimg {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.foodname {
+  margin: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #494949;
+  text-decoration: none;
+}
+
+.link{
+  text-decoration: none;
+}
+
+.notfound{
+  margin-top: 40px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #494949;
+  text-align: center;
+} 
+
+.moreButton {
+  padding: 10px 20px;
+  margin: 20px 0 0 auto;
+  display: block;
+  background-color: #ff9b05;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.moreButton:hover {
+  background-color: #e08804;
+}
+
+/* ===== RESPONSIVE: max-width 1024px ===== */
+@media (max-width: 1024px) {
+  .foodcard {
+    width: calc(50% - 20px); /* iki kart yan-yana, arada boşluq */
+    margin-top: 30px;
+  }
+}
+
+/* ===== RESPONSIVE: max-width 768px ===== */
+@media (max-width: 768px) {
+  .foodcard {
+    width: calc(50% - 15px); /* iki kart yan-yana */
+    margin-top: 25px;
+  }
+
+  .foodlist {
+    gap: 15px; /* aralarındakı məsafə */
+  }
+}
+
+/* ===== RESPONSIVE: max-width 480px ===== */
+@media (max-width: 480px) {
+  .foodcard {
+    width: calc(50% - 10px); /* iki kart yan-yana */
+    margin-top: 20px;
+  }
+
+  .foodlist {
+    gap: 10px; /* kartlar arası məsafə */
+  }
+
+  .foodname {
+    margin: 8px;
+    font-size: 14px;
+  }
+
+  .moreButton {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+}
+
