@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import Navbar from "../Component/Navbar";
 import { useState } from "react";
 import Footer from "../Component/Footer";
+import ScrollToTop from "../Component/ScrolltoTop";
 
 export default function MainLayout() {
     const [foodData, setFoodData] = useState([]);
@@ -10,6 +11,7 @@ export default function MainLayout() {
             <Navbar setFoodData={setFoodData} />
             <Outlet context={{foodData,setFoodData}}/>
             <Footer />
+            <ScrollToTop />
         </>
     );
 }
